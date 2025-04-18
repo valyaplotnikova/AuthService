@@ -14,7 +14,8 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
 
     model_config = SettingsConfigDict(
-        env_file=(".env", ".test.env")
+        env_file=(".env", ".test.env"),
+        extra='allow'
     )
 
     @computed_field
