@@ -120,7 +120,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-app/.env
+.env
+.test.env
 .venv
 .djvenv
 env/
@@ -164,4 +165,4 @@ cython_debug/
 .idea
 .DS_Store
 database.ini/
-.test.env
+
