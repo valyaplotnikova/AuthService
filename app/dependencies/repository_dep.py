@@ -1,6 +1,7 @@
 from typing import AsyncGenerator
 from sqlalchemy.ext.asyncio import AsyncSession
-from database.database import async_session_maker
+
+from app.database.database import async_session_maker
 
 
 async def get_session_with_commit() -> AsyncGenerator[AsyncSession, None]:

@@ -1,8 +1,7 @@
 from typing import Self, Optional
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, model_validator
-from sqlalchemy import Enum
 
-from utils import get_password_hash
+from app.utils import get_password_hash
 
 
 class SEmailModel(BaseModel):
